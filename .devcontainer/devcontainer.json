@@ -1,0 +1,16 @@
+{
+  "name": "C Development",
+  "image": "mcr.microsoft.com/devcontainers/c:1-bullseye",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-themes"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "postCreateCommand": "gcc --version && gdb --version"
+}
