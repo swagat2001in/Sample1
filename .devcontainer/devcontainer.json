@@ -12,5 +12,5 @@
       }
     }
   },
-  "postCreateCommand": "gcc --version && gdb --version"
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y qemu-user gcc-arm-linux-gnueabi && gcc --version && arm-linux-gnueabi-gcc --version && qemu-arm --version"
 }
